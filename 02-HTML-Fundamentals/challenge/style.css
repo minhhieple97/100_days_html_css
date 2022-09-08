@@ -1,0 +1,42 @@
+body{
+    
+    font-family: sans-serif;
+}
+.product {
+    border: 3px solid;
+}
+.product-title{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(201, 191, 191);
+}
+.price {
+    font-weight: bold;
+    font-size:20px;
+}
+button {
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.shipping{
+    font-weight: bold;
+    font-size:12px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.more-info:link, .more-info:visited{
+    color: black;
+}
+
+.more-info:link:hover,.more-info:active {
+    text-decoration: none;
+}

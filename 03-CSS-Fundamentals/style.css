@@ -1,6 +1,18 @@
+body {
+  color: #444;
+  font-family: sans-serif;
+
+}
 h1 h2 h3 h4 h5 p {
   font-family: sans-serif;
+  color: #444444;
 }
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
 h1 {
   font-size: 26px;
   text-transform: uppercase;
@@ -50,4 +62,18 @@ article header p {
 
 ul.related {
   list-style-type: none;
+}
+
+header.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-weight: bold;
 }
