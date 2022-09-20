@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -22,6 +22,7 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
+  /* background-color: red; */
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -65,6 +66,7 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
 }
 
 h2 {
@@ -136,9 +138,7 @@ li:last-child {
   list-style: none;
 }
 
-body {
-  /* background-color: orangered; */
-}
+
 
 /* .first-li {
   font-weight: bold;
@@ -152,9 +152,7 @@ li:last-child {
   font-style: italic;
 }
 
-li:nth-child(even) {
-  /* color: red; */
-}
+
 
 /* Misconception: this won't work! */
 article p:first-child {
@@ -222,9 +220,7 @@ h1::first-letter {
   margin-right: 5px;
 }
 
-h3 + p::first-line {
-  /* color: red; */
-}
+
 
 h2 {
   /* background-color: orange; */
@@ -244,24 +240,34 @@ h2::before {
   right: -25px;
 }
 
-/* Resolving conflicts */
-/* #copyright {
-  color: red;
+nav {
+  float:right;
 }
 
-.copyright {
-  color: blue;
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
 }
 
-.text {
-  color: yellow;
+
+article {
+ background-color: green;
+ float: left;
+ width: 900px;
 }
 
-footer p {
-  color: green !important;
-} */
+aside {
+ background-color: red;
+ float: right;
+ width: 300px;
 
-/* nav a:link,
-nav p {
-  font-size: 18px;
-} */
+}
+
+footer {
+background-color: yellow;
+clear: both;
+}
+
+
