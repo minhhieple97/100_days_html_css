@@ -15,8 +15,6 @@ body {
 
 .container {
   width: 1200px;
-  /* margin-left: auto;
-  margin-right: auto; */
   margin: 0 auto;
 }
 
@@ -188,14 +186,7 @@ a:active {
 }
 
 nav a:link {
-  /* background-color: orangered;
-  margin: 20px;
-  padding: 20px;
-
-  display: block; */
-
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -240,7 +231,7 @@ h2::before {
   right: -25px;
 }
 
-nav {
+/* nav {
   float:right;
 }
 
@@ -253,13 +244,11 @@ nav {
 
 
 article {
- background-color: green;
  float: left;
  width: 900px;
 }
 
 aside {
- background-color: red;
  float: right;
  width: 300px;
 
@@ -269,5 +258,60 @@ footer {
 background-color: yellow;
 clear: both;
 }
+ */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap:20px;
+  margin-bottom:20px;
+}
+
+#author {
+  margin-bottom: 0px;
+}
 
 
+.main-content {
+  display: flex;
+  gap:70px;
+}
+
+article {
+  width: 825px;
+}
+
+aside {
+  width:300px;
+  align-self: flex-start;
+}
+
+.list-related {
+  display: flex;
+  align-items: center;
+  gap:10px
+}
+
+
+
+.related-desc a {
+  font-size:14px;
+  font-weight: normal;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom:10px;
+}
+
+.related-author {
+  font-size:10px;
+}
+
+aside h4 {
+  margin-bottom:20px;
+}
