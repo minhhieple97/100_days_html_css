@@ -6,7 +6,7 @@
 
 /* PAGE SECTIONS */
 body {
-  color: #444;
+  /* color: #444; */
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
@@ -49,10 +49,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
 }
 
 /* SMALLER ELEMENTS */
@@ -136,6 +133,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-top: 30px;
 }
 
 
@@ -144,9 +142,9 @@ li:last-child {
   font-weight: bold;
 } */
 
-li:first-child {
+/* li:first-child {
   font-weight: bold;
-}
+} */
 
 li:last-child {
   font-style: italic;
@@ -180,6 +178,7 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
 /* LVHA */
 
 .post-img {
@@ -195,7 +194,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -240,34 +238,105 @@ h2::before {
   right: -25px;
 }
 
-nav {
-  float:right;
-}
+/* 
+setup layout for page by float technology
+*/
+/* nav {
+  float: right;
+} */
 
 
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: block;
-}
-
-
-article {
- background-color: green;
- float: left;
- width: 900px;
+/* article {
+  float: left;
+  width: 850px;
 }
 
 aside {
- background-color: red;
- float: right;
- width: 300px;
+  float: right;
+  width: 280px;
 
 }
 
 footer {
-background-color: yellow;
-clear: both;
+  clear: both;
+} */
+
+
+/* 
+setup layout for page by flexbox technology
+*/
+
+
+
+header.main-header {
+  /* align-self: flex-start; */
+  /* flex-shrink: 0; */
+  /* flex-grow: 1; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
+
+.author-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.author {
+  margin-bottom: 0;
+
+}
+
+/* nav {
+  
+} */
+
+.related-post {
+  display: flex;
+  align-items: center;;
+  gap:20px;
+  margin-bottom: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+
+.content {
+  display: flex;
+  gap:75px
+}
+aside {
+  flex-basis: 300px;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+article {
+  flex-grow: 1; /* <=> flex-basis: 825px; */
+  /* flex-shrink: 0; */
+  margin-bottom: 0;
+}
