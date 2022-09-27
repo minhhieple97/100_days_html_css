@@ -116,6 +116,13 @@ body {
 .yellow {
     background-color: yellow;
 }
+ */
+
+/* setup layout with flexbox */
+.container { 
+    display: flex;
+    gap:20px;
+}
 
 .sale {
     position: absolute;
