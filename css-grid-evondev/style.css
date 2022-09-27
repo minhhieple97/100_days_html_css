@@ -1,0 +1,22 @@
+
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* justify-items: center; */
+    /* row-gap: 20px; */
+}
+.layout-left {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 100% 50% 50%;
+}
+.layout-image .top{
+    grid-column: -1/1;
+}
+.layout-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
