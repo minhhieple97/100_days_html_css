@@ -34,7 +34,6 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     color: #777;
-    margin-bottom: 20px;
 }
 
 .more-info:link,
@@ -119,10 +118,10 @@ body {
  */
 
 /* setup layout with flexbox */
-.container { 
+/* .container { 
     display: flex;
     gap:20px;
-}
+} */
 
 .sale {
     position: absolute;
@@ -134,4 +133,30 @@ body {
     font-weight:bold;
     padding: 7px 15px ;
     text-align: center;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    column-gap:40px;
+}
+
+.product-title {
+    grid-column: 1/-1;
+}
+
+.add-cart {
+    grid-column: 1/-1;
+}
+
+
+.price-shipping {
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 20px;
+}
+
+.shipping {
+    align-self: center;
+    
 }
