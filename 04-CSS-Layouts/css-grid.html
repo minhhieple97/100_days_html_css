@@ -1,98 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Grid</title>
-    <style>
-      .el--1 {
-        background-color: blueviolet;
-      }
-      .el--2 {
-        background-color: orangered;
-      }
-      .el--3 {
-        background-color: green;
-        height: 150px;
-      }
-      .el--4 {
-        background-color: goldenrod;
-      }
-      .el--5 {
-        background-color: palevioletred;
-      }
-      .el--6 {
-        background-color: steelblue;
-      }
-      .el--7 {
-        background-color: yellow;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid</title>
+  <style>
+    .el--1 {
+      background-color: blueviolet;
+      grid-column: 1/3;
+      /* width: 800px; */
+    }
+
+    .el--2 {
+      background-color: orangered;
+    }
+
+    .el--3 {
+      background-color: green;
+      /* height: 150px; */
+    }
+
+    .el--4 {
+      background-color: goldenrod;
+    }
+
+    .el--5 {
+      background-color: palevioletred;
+    }
+
+    .el--6 {
+      background-color: steelblue;
+      grid-column: 1/3;
+    }
+
+    .el--7 {
+      background-color: yellow;
+    }
+
+    .el--8 {
+      background-color: crimson;
+    }
+
+    .left {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    .right {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    /* 
       .el--8 {
-        background-color: crimson;
-      }
-
-      .el--8 {
       }
 
       .el--2 {
-      }
+        grid-column: 1/2;
+        grid-row: 2/2;
+      } */
 
 
 
-      .container--1 {
-        /* STARTER */
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr 1fr;
-        /* grid-template-rows: 300px 200px; */
-        font-family: sans-serif;
+    .container--1 {
+      /* STARTER */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* grid-template-rows: 1fr; */
+      /* grid-template-rows: 300px 200px; */
+      /* font-family: sans-serif;
         background-color: #ddd;
         font-size: 30px;
-        column-gap: 20px;
-        row-gap:40px;
-        /* row-gap:60px; */
-        display: none;
-      }
+        column-gap: 20px; */
+      /* row-gap:60px; */
+    }
 
-      .container--2 {
-        /* STARTER */
-        display: grid;
-        font-family: sans-serif;
-        background-color: black;
-        font-size: 40px;
-        /* margin: 500px; */
+    .container--2 {
+      /* STARTER */
+      display: none;
+      font-family: sans-serif;
+      background-color: black;
+      font-size: 40px;
+      /* margin: 500px; */
 
-        width: 1000px;
-        height: 600px;
+      width: 1000px;
+      height: 600px;
 
-        grid-template-columns: 125px 200px 125px 200px;
-        grid-template-rows: 250px 100px;
-        /* CSS GRID */
-        /* align-items: center; */
-        /* align-content: center; */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container--1">
+      /* CSS GRID */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container--1">
+    <div class="left">
       <div class="el el--1">(1) HTML</div>
       <div class="el el--2">(2) and</div>
       <div class="el el--3">(3) CSS</div>
+    </div>
+    <div class="right">
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <!-- <div class="el el--7">(7) to</div> -->
-      <div class="el el--8">(8) learn</div>
     </div>
 
-    <div class="container--2">
-      <div class="el el--1">(1)</div>
-      <div class="el el--3">(3)</div>
-      <div class="el el--4">(4)</div>
-      <div class="el el--5">(5)</div>
-      <div class="el el--6">(6)</div>
-      <div class="el el--7">(7)</div>
-    </div>
-  </body>
+    <!-- <div class="el el--7">(7) to</div> -->
+  </div>
+
+  <div class="container--2">
+    <div class="el el--1">(1)</div>
+    <div class="el el--3">(3)</div>
+    <div class="el el--4">(4)</div>
+    <div class="el el--5">(5)</div>
+    <div class="el el--6">(6)</div>
+    <!-- <div class="el el--7">(7)</div> -->
+  </div>
+</body>
+
 </html>
