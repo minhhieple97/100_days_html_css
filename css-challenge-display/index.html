@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+     body {
+      background-color: rgb(247, 226, 226);
+     }
+     .container {
+      width: 100%;
+      height: 400px;
+      background-color: rgb(255, 255, 255);
+      padding: 40px;
+      /* position: relative; */
+     }
+    .content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      /* left: 50%; */
+      
+    }
+    .title-content {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 70px;
+    }
+    .title-footer {
+      width: 70px;
+      height: 5px;
+      background-color: rgb(76, 76, 251);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 120px;
+    }
+    .text-content {
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 90px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="title-content">
+         <h1>Section title</h1>
+      </div>
+      <div class="title-footer"></div>
+      <div class="text-content">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo accusamus ipsam animi reprehenderit blanditiis non sequi nisi exercitationem voluptates delectus, deleniti unde eaque temporibus pariatur velit voluptatum iste! Pariatur incidunt doloremque beatae non ipsa labore reiciendis</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
