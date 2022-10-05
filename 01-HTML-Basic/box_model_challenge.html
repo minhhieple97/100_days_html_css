@@ -18,8 +18,8 @@
     }
 
     .card {
-      max-width: 30vw;
-      min-height: 20vw;
+      max-width: 25vw;
+      min-height: 16vw;
       background-color: white;
       border: 10px solid transparent;
       border-radius: 10px;
@@ -39,22 +39,41 @@
     }
 
     .icon {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       margin: 0 auto;
       border: 1px solid transparent;
       border-radius: 50%;
     }
 
+    .title {
+      font-weight: bold;
+      max-width: ;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 25px;
+      margin-top: 0.75rem;
+    }
+
+    .text{
+      margin-top: 1rem;
+    }
+
     .card-1 .icon {
-      background-color: pink;
+      background-color: rgb(208, 104, 121);
     }
 
     .card-2 .icon {
-      background-color: rgb(217, 37, 91);
+      background-color: rgb(187, 104, 246);
     }
 
-    .btn {}
+    .btn {
+      margin-top: 0.75rem;
+      border:none;;
+      width: 4rem;
+      height: 1.75rem;
+      color: blueviolet;
+      border-radius: 10%;
+    }
   </style>
 </head>
 
@@ -62,16 +81,14 @@
   <div class="container">
     <div class="card card-1">
       <div class="icon"></div>
-      <h2 class="title">card title</h2>
-      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maxime, odio quis asperiores
-        corrupti voluptas alias eum possimus laborum cum!</p>
+      <h2 class="title">Card title</h2>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maxime, odio quis asperiores</p>
       <button class="btn btn-pink">Sign In</button>
     </div>
     <div class="card card-2">
       <div class="icon"></div>
-      <h2 class="title">card title</h2>
-      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti necessitatibus excepturi
-        iure suscipit ut cumque ex dolor, autem optio.</p>
+      <h2 class="title">Card title</h2>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti necessitatibus excepturi</p>
       <button class="btn btn-blue">Sign In</button>
     </div>
   </div>
