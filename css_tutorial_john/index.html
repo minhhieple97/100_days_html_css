@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primaryColor: blue;
+        --cl-secondary: red;
+        --mainTransition: all 3s linear;
+        --mainSpacing: 5px;
+      }
+      h1 {
+        color: var(--primaryColor);
+      }
+      h2 {
+        color: var(--primaryColor);
+      }
+      h3 {
+        color: var(--primaryColor);
+        transition: var(--mainTransition);
+      }
+      h4 {
+        color: var(--primaryColor);
+      }
+      p {
+        letter-spacing: var(--mainSpacing);
+        transition: var(--mainTransition)''
+      }
+
+      h3:hover {
+        color: var(--cl-secondary);
+      }
+
+      p:hover {
+        color: var(--cl-secondary);
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+      accusamus excepturi dolore. Autem architecto sed voluptate possimus
+      repellendus perferendis accusamus!
+    </p>
+    <h2>Hello world 1</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+      accusamus excepturi dolore. Autem architecto sed voluptate possimus
+      repellendus perferendis accusamus!
+    </p>
+    <h3>Hello world 2</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+      accusamus excepturi dolore. Autem architecto sed voluptate possimus
+      repellendus perferendis accusamus!
+    </p>
+    <h4>Hello world 3</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+      accusamus excepturi dolore. Autem architecto sed voluptate possimus
+      repellendus perferendis accusamus!
+    </p>
+    <div class="main">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+        facilis dignissimos incidunt nihil dolores earum reprehenderit,
+        voluptates corporis consequuntur delectus.
+      </p>
+    </div>
+  </body>
+</html>
