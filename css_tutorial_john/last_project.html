@@ -25,7 +25,7 @@
         --grey: #64748b;
         --grey-dark: #0f172a;
         --fluid-width: 90vw;
-        --max-width: 1170px;
+        --max-width: 500px;
         --black: #222;
         --white: #fff;
         --letter-spacing: 2px;
@@ -34,26 +34,51 @@
         --shadow-light: 0 5px 15px rgba(0,0,0,0.1);
         --transition: 0.3s ease-in-out all;
       }
+
       body {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         line-height: 1.5;
         background: var(--grey-light);
-      }
-      .cards {
-        width: 30vw;
-        max-width: 1170px;
-        margin: 100px auto;
-      }
-      .card {
-        background-color: var(--cardBgColor);
-        margin-bottom: 30px;
-        padding: 10px;
-      }
-      .card img {
+        color: var(--grey-dark);
+      }   
+
+      .img {
         width: 100%;
         display: block;
-        margin-bottom: 10px;
+        object-fit: cover;
       }
+      .blogs {
+        padding: 5rem 0;
+      }
+
+      .section-title {
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: var(--letter-spacing);
+        margin-bottom: 2rem;
+      }
+      .cards {
+        width: var(--fluid-width);
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+      .card {
+        background-color: var(--white);
+        margin-bottom: 2rem;
+        padding: 0.75rem;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-light);
+        transition: var(--transition);
+      }
+
+      .card:hover {
+        box-shadow: var(--shadow-dark);
+      }
+      .blog-img {
+        border-radius: var(--border-radius);
+        margin-bottom: 0.5rem;
+      }
+
       a.category {
         text-decoration: none;
         text-transform: uppercase;
@@ -67,17 +92,11 @@
       p.description {
         margin-bottom: 10px;
       }
-      .section-title {
-        text-align: center;
-        margin-top: 50px;
-      }
-      h1 {
-        text-transform: uppercase;
-      }
+
     </style>
   </head>
   <body>
-    <section>
+    <section class="blogs">
       <div class="section-title">
         <h1 class="title">lastes blog</h1>
       </div>
@@ -85,7 +104,7 @@
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1664999407875-b4d94999f9be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-            alt=""
+            alt="" class="img blog-img" 
           />
           <a href="" class="category"
             >life style <i class="fa-brands fa-reddit"></i
@@ -104,7 +123,7 @@
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1664999407875-b4d94999f9be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-            alt=""
+            alt="" class="img blog-img" 
           />
           <a href="" class="category"
             >life style <i class="fa-brands fa-reddit"></i
@@ -123,7 +142,7 @@
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1664999407875-b4d94999f9be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-            alt=""
+            alt="" class="img blog-img" 
           />
           <a href="" class="category"
             >life style <i class="fa-brands fa-reddit"></i
